@@ -1,13 +1,14 @@
 all:
-	@echo Hello world
+	@echo "make test | qemu-guest-agent | clean"
 
 test:
-	@rpmbuild -bb SPECS/test.spec
-# rpmbuild --target noarch -bb SPECS/test.spec
+	@rpmbuild --target noarch -bb SPECS/test.spec
 
 qemu-guest-agent:
 	@rpmbuild -bb SPECS/qemu-guest-agent.spec
 
 clean:
-	rm -rf BUILD/* BUILDROOT/*
+	rm -rf BUILD/*
+	rm -rf BUILDROOT/*
+	rm -rf RPMS/*
 
