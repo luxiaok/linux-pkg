@@ -2,7 +2,7 @@
 
 Name: test
 Version: 1.0.0
-Release: 3
+Release: 1%{?dist}
 Summary: Test Package      
 Packager: luxiaok2008@gmail.com
 Vendor: Luxiaok
