@@ -9,6 +9,9 @@ test:
 	$(call PrepareSource, test-1.0.0)
 	@rpmbuild --target noarch -bb SPECS/test.spec
 
+hello:
+	@rpmbuild -bb SPECS/hello.spec
+
 qemu-guest-agent:
 	$(call PrepareSource, qemu-guest-agent-2.12.1)
 	@rpmbuild -bb SPECS/qemu-guest-agent.spec
@@ -17,5 +20,4 @@ clean:
 	rm -rf BUILD/*
 	rm -rf BUILDROOT/*
 	rm -rf RPMS/*
-	rm -rf SOURCES/*.tar.gz
 
