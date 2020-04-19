@@ -5,7 +5,7 @@ Linux extra packges
 
 * test v1.0.0
 
-* qemu-guest-agent v2.12.1
+* [qemu-guest-agent](https://wiki.qemu.org/Features/GuestAgent) v2.12.1
 
 ## License
 
