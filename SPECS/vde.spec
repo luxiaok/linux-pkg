@@ -22,6 +22,13 @@ Summary: Virtual Distributed Ethernet support for Python
 Virtual Distributed Ethernet support for Python
 git-c7b36a57831a9067c8619c3e17a03e595623b3eb-20191011
 
+%package -n vde-devel
+Summary: Virtual Distributed Ethernet Development
+
+%description -n vde-devel
+Virtual Distributed Ethernet Development Libs
+git-c7b36a57831a9067c8619c3e17a03e595623b3eb-20191011
+
 %prep
 %setup -q
 
@@ -47,11 +54,13 @@ ldconfig
 /usr/bin/*
 /usr/sbin/vde_tunctl
 /usr/libexec/vdetap
-/usr/lib64/*
-/usr/include/libvde*.h
 /usr/share/man/*
 
 %files -n vde-python
 /usr/lib/python2.7/site-packages/*
+
+%files -n vde-devel
+/usr/lib64/*
+/usr/include/libvde*.h
 
 %changelog
