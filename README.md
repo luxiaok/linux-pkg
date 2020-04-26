@@ -9,7 +9,7 @@ Linux extra packges
 
 * [qemu-guest-agent](https://wiki.qemu.org/Features/GuestAgent) v2.12.1
 
-* [vde](https://github.com/virtualsquare/vde-2/com) v2.3.2
+* [vde](https://github.com/virtualsquare/vde-2) v2.3.2
 
 ## License
 
