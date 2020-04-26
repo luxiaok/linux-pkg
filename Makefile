@@ -16,6 +16,9 @@ qemu-guest-agent:
 	$(call PrepareSource, qemu-guest-agent-2.12.1)
 	@rpmbuild -bb SPECS/qemu-guest-agent.spec
 
+vde:
+	@rpmbuild -bb SPECS/vde.spec
+
 clean:
 	rm -rf BUILD/*
 	rm -rf BUILDROOT/*
