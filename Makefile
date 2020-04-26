@@ -1,5 +1,4 @@
-all:
-	@echo "make test | qemu-guest-agent | clean"
+# Makefile for rpmbuild
 
 define PrepareSource
 	@cd SOURCES; rm -f $(1).tar.gz; tar zcf $(1).tar.gz $(1)
@@ -9,19 +8,22 @@ define RpmBuild
 	@rpmbuild -bb SPECS/$(1).spec
 endef
 
+all:
+	@echo "make test | qemu-guest-agent | vde | clean"
+
 test:
-	$(call PrepareSource, test-1.0.0)
+	$(call PrepareSource,test-1.0.0)
 	@rpmbuild --target noarch -bb SPECS/test.spec
 
 hello:
-	$(call RpmBuild, hello)
+	$(call RpmBuild,hello)
 
 qemu-guest-agent:
-	$(call PrepareSource, qemu-guest-agent-2.12.1)
-	$(call RpmBuild, qemu-guest-agent)
+	$(call PrepareSource,qemu-guest-agent-2.12.1)
+	$(call RpmBuild,qemu-guest-agent)
 
 vde:
-	$(call RpmBuild, vde)
+	$(call RpmBuild,vde)
 
 clean:
 	rm -rf BUILD/*
