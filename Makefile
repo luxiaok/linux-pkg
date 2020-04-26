@@ -14,14 +14,14 @@ test:
 	@rpmbuild --target noarch -bb SPECS/test.spec
 
 hello:
-	@rpmbuild -bb SPECS/hello.spec
+	$(call RpmBuild, hello)
 
 qemu-guest-agent:
 	$(call PrepareSource, qemu-guest-agent-2.12.1)
-	@rpmbuild -bb SPECS/qemu-guest-agent.spec
+	$(call RpmBuild, qemu-guest-agent)
 
 vde:
-	@rpmbuild -bb SPECS/vde.spec
+	$(call RpmBuild, vde)
 
 clean:
 	rm -rf BUILD/*
