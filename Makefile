@@ -25,6 +25,9 @@ qemu-guest-agent:
 vde:
 	$(call RpmBuild,vde)
 
+python-pycurl:
+	$(call RpmBuild,python-pycurl)
+
 clean:
 	rm -rf BUILD/*
 	rm -rf BUILDROOT/*
