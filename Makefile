@@ -9,7 +9,7 @@ define RpmBuild
 endef
 
 all:
-	@echo "make test | qemu-guest-agent | vde | python-pycurl | clean"
+	@echo "make test | qemu-guest-agent | vde | pycurl | clean"
 
 test:
 	$(call PrepareSource,test-1.0.0)
@@ -25,7 +25,7 @@ qemu-guest-agent:
 vde:
 	$(call RpmBuild,vde)
 
-python-pycurl:
+pycurl:
 	$(call RpmBuild,python-pycurl)
 
 clean:
