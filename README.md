@@ -11,7 +11,7 @@ Linux extra packges
 
 * [vde](https://github.com/virtualsquare/vde-2) v2.3.2
 
-* [python-pycurl](https://github.com/pycurl/pycurl) v7.43.0.5 (For el7)
+* [python-pycurl](https://github.com/pycurl/pycurl) v7.43.0.5 (For **el7**)
 
 ## License
 
