@@ -10,6 +10,7 @@ Group: Applications/File
 License: GPLv2
 URL: https://github.com/luxiaok    
 Source0: %{name}-%{version}.tar.gz
+BuildArch: noarch
 
 
 %description

@@ -13,7 +13,7 @@ all:
 
 test:
 	$(call PrepareSource,test-1.0.0)
-	@rpmbuild --target noarch -bb SPECS/test.spec
+	$(call RpmBuild,test)
 
 hello:
 	$(call RpmBuild,hello)
