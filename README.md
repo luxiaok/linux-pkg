@@ -11,6 +11,8 @@ Linux extra packges
 
 * [vde](https://github.com/virtualsquare/vde-2) v2.3.2
 
+* [python-pycurl](https://github.com/pycurl/pycur) v7.43.0.5
+
 ## License
 
 This project is under the **GPLv3** License. See the [LICENSE](LICENSE) file for the full license text.
