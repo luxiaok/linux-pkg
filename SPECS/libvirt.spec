@@ -233,6 +233,7 @@ License: LGPLv2+
 URL: https://libvirt.org/
 Vendor: KK-Studio
 Packager: Xiaok <luxiaok2008@gmail.com>
+Group: Development/Tools
 
 %if %(echo %{version} | grep -q "\.0$"; echo $?) == 1
     %define mainturl stable_updates/

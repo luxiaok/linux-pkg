@@ -40,6 +40,10 @@ Release: 1%{?dist}%{?extra_release}
 Source0: http://libvirt.org/sources/python/%{name}-%{version}.tar.gz
 Url: http://libvirt.org
 License: LGPLv2+
+Group: Development/Tools
+Vendor: KK-Studio
+Packager: Xiaok <luxiaok2008@gmail.com>
+
 #BuildRequires: git
 BuildRequires: libvirt-devel >= 5.10.0-1
 %if %{with_python2}
