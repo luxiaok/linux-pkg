@@ -13,6 +13,13 @@ Linux extra packges
 
 * [python-pycurl](https://github.com/pycurl/pycurl) v7.43.0.5 (For **el7**)
 
+* [libvirt](https://libvirt.org/) v5.10.0 (For **el7**)
+
+* [libvirt-python](https://github.com/libvirt/libvirt-python) v5.10.0 (For **el7**)
+
+* [qemu-kvm](https://www.qemu.org/download/) v2.12.0 (For **el7**)
+
+
 ## License
 
 This project is under the **GPLv3** License. See the [LICENSE](LICENSE) file for the full license text.
