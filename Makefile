@@ -28,6 +28,15 @@ vde:
 pycurl:
 	$(call RpmBuild,python-pycurl)
 
+libvirt:
+	$(call RpmBuild,libvirt)
+
+libvirt-python:
+	$(call RpmBuild,libvirt-python)
+
+qemu-kvm:
+	$(call RpmBuild,qemu-kvm)
+
 clean:
 	rm -rf BUILD/*
 	rm -rf BUILDROOT/*
