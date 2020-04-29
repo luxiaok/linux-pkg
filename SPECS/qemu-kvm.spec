@@ -119,6 +119,8 @@ Epoch: 10
 License: GPLv2 and GPLv2+ and CC-BY
 Group: Development/Tools
 URL: http://www.qemu.org/
+Vendor: KK-Studio
+Packager: Xiaok <luxiaok@gmail.com>
 %if %{rhev}
 ExclusiveArch: x86_64 %{power64} aarch64 s390x
 %else
