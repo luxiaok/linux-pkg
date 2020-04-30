@@ -57,8 +57,10 @@ ALL += libvirt-python
 libvirt-python:
 	$(call RpmBuild,libvirt-python)
 
+.PHONY: all
 all: $(ALL)
 
+.PHONY: clean
 clean:
 	rm -rf BUILD/*
 	rm -rf BUILDROOT/*
