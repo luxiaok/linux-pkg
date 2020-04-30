@@ -149,7 +149,7 @@
 
 %define with_firewalld 1
 
-%if 0%{?fedora} >= 31 || 0%{?rhel} > 7
+%if 0%{?fedora} >= 31 || 0%{?rhel} >= 7
     %define with_firewalld_zone 0%{!?_without_firewalld_zone:1}
 %endif
 
@@ -1984,6 +1984,8 @@ exit 0
 
 
 %changelog
+* Thu Apr 30 2020 Xiaok <luxiaok2008@gmail.com> - 5.10.0-2
+- add --with-firewalld-zone support for rhel7
 * Wed Apr 29 2020 Xiaok <luxiaok2008@gmail.com> - 5.10.0-1
 - add --with-default-editor=vim configuration argument
 * Tue Apr 28 2020 Xiaok <luxiaok2008@gmail.com> - 5.10.0
