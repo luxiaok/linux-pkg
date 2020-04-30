@@ -4,8 +4,8 @@ Name: test
 Version: 1.0.0
 Release: 1%{?dist}
 Summary: Test Package      
-Packager: luxiaok2008@gmail.com
-Vendor: Luxiaok
+Packager: Xiaok <luxiaok2008@gmail.com>
+Vendor: KK-Studio
 Group: Applications/File
 License: GPLv2
 URL: https://github.com/luxiaok    
