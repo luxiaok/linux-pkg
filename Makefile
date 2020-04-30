@@ -8,7 +8,7 @@ define RpmBuild
 	@rpmbuild -bb SPECS/$(1).spec
 endef
 
-all:
+help:
 	@echo "make test                # For Test RPM Package"
 	@echo "make hello               # For GUN Hello RPM Package"
 	@echo "make qemu-guest-agent    # For QEMU Guest Agent RPM Package"
