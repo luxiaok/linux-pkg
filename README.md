@@ -6,7 +6,7 @@ Linux extra packges
 |    Package   |   Version     |    Platform    |    Comments    |
 |:------------:|:-------------:|:--------------:|:--------------:|
 | [test](SPECS/test.spec) | 1.0.0 | All | A sample for rpmbuild |
-| [GUN Hello](https://www.gnu.org/software/hello/) | 2.10 | All | GNU Hello |
+| [GNU Hello](https://www.gnu.org/software/hello/) | 2.10 | noarch | GNU Hello |
 | [vde](https://github.com/virtualsquare/vde-2) | 2.3.2 | el7 | Virtual Distributed Ethernet |
 | [libvirt](https://libvirt.org/) | 5.10.0 | el7 | Libvirt |
 | [libvirt-python](https://github.com/libvirt/libvirt-python) | 5.10.0 | el7 | Libvirt for Python2 |
