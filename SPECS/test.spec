@@ -14,7 +14,7 @@ BuildArch: noarch
 
 
 %description
-Descriptions for test.
+This is a test rpm package.
 
 
 %prep
