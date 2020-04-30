@@ -61,6 +61,10 @@ libvirt-python:
 .PHONY: all
 all: $(ALL)
 
+.PHONY: install
+install:
+	# Hello installation!
+
 .PHONY: clean
 clean:
 	$(RM) -r BUILD/*
