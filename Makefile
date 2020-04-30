@@ -13,12 +13,13 @@ endef
 help:
 	@echo "make test                # For Test RPM Package"
 	@echo "make hello               # For GUN Hello RPM Package"
-	@echo "make qemu-guest-agent    # For QEMU Guest Agent RPM Package"
 	@echo "make vde                 # For Virtual Distributed Ethernet RPM Package"
 	@echo "make pycurl              # For python-pycurl RPM Package"
+	@echo "make qemu-kvm            # For QEMU-KVM RPM Package"
+	@echo "make qemu-guest-agent    # For QEMU Guest Agent RPM Package"
 	@echo "make libvirt             # For libvirt RPM Package"
 	@echo "make libvirt-python      # For libvirt-python RPM Package"
-	@echo "make qemu-kvm            # For QEMU-KVM RPM Package"
+	@echo "make all                 # For building all packages"
 	@echo "make clean               # Clean cache files"
 
 # ALL += test
