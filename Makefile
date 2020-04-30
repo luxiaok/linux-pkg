@@ -7,6 +7,7 @@ define PrepareSource
 endef
 
 define RpmBuild
+	@echo -e "[`date +"%F %T"`] \033[32;49;1mCompiling for $(1)\033[39;49;0m"
 	@rpmbuild -bb SPECS/$(1).spec
 endef
 
