@@ -1,5 +1,7 @@
 # Makefile for rpmbuild
 
+ALL =
+
 define PrepareSource
 	@cd SOURCES; rm -f $(1).tar.gz; tar zcf $(1).tar.gz $(1)
 endef
@@ -19,31 +21,41 @@ help:
 	@echo "make qemu-kvm            # For QEMU-KVM RPM Package"
 	@echo "make clean               # Clean cache files"
 
+# ALL += test
 test:
 	$(call PrepareSource,test-1.0.0)
 	$(call RpmBuild,test)
 
+ALL += hello
 hello:
 	$(call RpmBuild,hello)
 
+ALL += vde
+vde:
+	$(call RpmBuild,vde)
+
+ALL += pycurl
+pycurl:
+	$(call RpmBuild,python-pycurl)
+
+ALL += qemu-kvm
+qemu-kvm:
+	$(call RpmBuild,qemu-kvm)
+
+ALL += qemu-guest-agent
 qemu-guest-agent:
 	$(call PrepareSource,qemu-guest-agent-2.12.1)
 	$(call RpmBuild,qemu-guest-agent)
 
-vde:
-	$(call RpmBuild,vde)
-
-pycurl:
-	$(call RpmBuild,python-pycurl)
-
+ALL += libvirt
 libvirt:
 	$(call RpmBuild,libvirt)
 
+ALL += libvirt-python
 libvirt-python:
 	$(call RpmBuild,libvirt-python)
 
-qemu-kvm:
-	$(call RpmBuild,qemu-kvm)
+all: $(ALL)
 
 clean:
 	rm -rf BUILD/*
