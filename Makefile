@@ -62,7 +62,7 @@ all: $(ALL)
 
 .PHONY: clean
 clean:
-	rm -rf BUILD/*
-	rm -rf BUILDROOT/*
-	rm -rf RPMS/*
+	$(RM) -r BUILD/*
+	$(RM) -r BUILDROOT/*
+	$(RM) -r RPMS/*
 
