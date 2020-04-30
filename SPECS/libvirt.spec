@@ -228,7 +228,7 @@
 Summary: Library providing a simple virtualization API
 Name: libvirt
 Version: 5.10.0
-Release: 1%{?dist}
+Release: 2%{?dist}
 License: LGPLv2+
 URL: https://libvirt.org/
 Vendor: KK-Studio

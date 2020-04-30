@@ -1,7 +1,7 @@
 %{!?python_sitearch: %global python_sitearch %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib(1)")}
 Name:           python-pycurl
 Version:        7.43.0.5
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A Python interface to libcurl
 Vendor:         Xiaok <luxiaok2008@gmail.com>
 Packager:       KK-Studio
