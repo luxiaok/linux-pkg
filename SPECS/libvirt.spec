@@ -1217,6 +1217,7 @@ cd %{_vpath_builddir}
            %{?enable_werror} \
            --enable-expensive-tests \
            --with-init-script=systemd \
+           --with-default-editor=vim \
            %{?arg_login_shell}
 make %{?_smp_mflags} V=1
 
@@ -1983,5 +1984,8 @@ exit 0
 
 
 %changelog
-* Thu Apr 30 2020 Xiaok <luxiaok@gmail.com> - 5.10.0-1
+* Wed Apr 29 2020 Xiaok <luxiaok2008@gmail.com> - 5.10.0-1
+- add --with-default-editor=vim configuration argument
+* Tue Apr 28 2020 Xiaok <luxiaok2008@gmail.com> - 5.10.0
 - compile with libvirt-5.10.0 by default
+
