@@ -70,4 +70,5 @@ clean:
 	$(RM) -r BUILD/*
 	$(RM) -r BUILDROOT/*
 	$(RM) -r RPMS/*
+	$(RM) -r SRPMS/*
 
