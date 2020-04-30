@@ -57,3 +57,5 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Sun Apr 19 2020 Xiaok <luxiaok2008@gmail.com> - 1.0.0
+- Release the first package for test
