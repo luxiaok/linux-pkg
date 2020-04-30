@@ -1983,3 +1983,5 @@ exit 0
 
 
 %changelog
+* Thu Apr 30 2020 Xiaok <luxiaok@gmail.com> - 5.10.0-1
+- compile with libvirt-5.10.0 by default
