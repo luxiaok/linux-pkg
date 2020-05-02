@@ -84,7 +84,7 @@
 %endif
 
 # We need a recent enough libiscsi (>= 1.18.0)
-%if 0%{?fedora} || 0%{?rhel} > 7
+%if 0%{?fedora} || 0%{?rhel} >= 7
     %define with_storage_iscsi_direct 0%{!?_without_storage_iscsi_direct:1}
 %else
     %define with_storage_iscsi_direct 0
@@ -228,7 +228,7 @@
 Summary: Library providing a simple virtualization API
 Name: libvirt
 Version: 5.10.0
-Release: 2%{?dist}
+Release: 3%{?dist}
 License: LGPLv2+
 URL: https://libvirt.org/
 Vendor: KK-Studio
