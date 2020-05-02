@@ -1,7 +1,7 @@
 Name: libiscsi
 Summary: iSCSI client library
 Version: 1.19.0
-Release: 1%{?dist}
+Release: 2%{?dist}
 License: LGPLv2+
 Group: System Environment/Libraries
 URL: https://github.com/sahlberg/libiscsi
@@ -44,6 +44,12 @@ rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install %{?_smp_mflags}
 rm $RPM_BUILD_ROOT/%{_libdir}/libiscsi.a
 rm $RPM_BUILD_ROOT/%{_libdir}/libiscsi.la
+mkdir $RPM_BUILD_ROOT/%{_libdir}/iscsi
+mv $RPM_BUILD_ROOT/%{_libdir}/libiscsi* $RPM_BUILD_ROOT/%{_libdir}/iscsi/
+sed -i 's#libdir=/usr/lib64#libdir=/usr/lib64/iscsi#g' $RPM_BUILD_ROOT/%{_libdir}/pkgconfig/libiscsi.pc
+mkdir -p $RPM_BUILD_ROOT/etc/ld.so.conf.d
+echo '/usr/lib64/iscsi' > $RPM_BUILD_ROOT/etc/ld.so.conf.d/libiscsi.conf
+
 
 # Remove "*.old" files
 find $RPM_BUILD_ROOT -name "*.old" -exec rm -f {} \;
@@ -58,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 %doc COPYING LICENCE-LGPL-2.1.txt README TODO
-%{_libdir}/libiscsi.so.*
+%{_libdir}/iscsi/libiscsi.so.*
 
 %package utils
 Summary: iSCSI Client Utilities
@@ -94,8 +100,9 @@ The libiscsi-devel package includes the header files for libiscsi.
 %doc COPYING LICENCE-LGPL-2.1.txt README TODO
 %{_includedir}/iscsi/iscsi.h
 %{_includedir}/iscsi/scsi-lowlevel.h
-%{_libdir}/libiscsi.so
+%{_libdir}/iscsi/libiscsi.so
 %{_libdir}/pkgconfig/libiscsi.pc
+%{_sysconfdir}/ld.so.conf.d/libiscsi.conf
 
 #%package testsuite
 #Summary: iSCSI test suite
