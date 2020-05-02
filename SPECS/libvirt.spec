@@ -228,7 +228,7 @@
 Summary: Library providing a simple virtualization API
 Name: libvirt
 Version: 5.10.0
-Release: 4%{?dist}
+Release: 6%{?dist}
 License: LGPLv2+
 URL: https://libvirt.org/
 Vendor: KK-Studio
@@ -1985,7 +1985,7 @@ exit 0
 
 %changelog
 * Sat May 2 2020 Xiaok <luxiaok2008@gmail.com> - 5.10.0-3
-- add --with-storage-iscsi-direct (libiscsi>=1.18) support for rhel7 (Revert)
+- Revert "add --with-storage-iscsi-direct (libiscsi>=1.18) support for rhel7"
 * Thu Apr 30 2020 Xiaok <luxiaok2008@gmail.com> - 5.10.0-2
 - add --with-firewalld-zone support for rhel7
 * Wed Apr 29 2020 Xiaok <luxiaok2008@gmail.com> - 5.10.0-1
