@@ -21,6 +21,7 @@ help:
 	# make qemu-guest-agent    QEMU Guest Agent
 	# make libvirt             Libvirt
 	# make libvirt-python      Libvirt API for Python2
+	# make forcedeth           Forcedeth kernel module
 	# make all                 Compile all rpm packages
 	# make clean               Clean cache files
 
@@ -57,6 +58,10 @@ libvirt:
 ALL += libvirt-python
 libvirt-python:
 	$(call RpmBuild,libvirt-python)
+
+ALL += forcedeth-kmod
+forcedeth-kmod:
+	$(call RpmBuild,forcedeth-kmod)
 
 .PHONY: all
 all: $(ALL)

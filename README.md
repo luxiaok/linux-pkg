@@ -13,6 +13,7 @@ Linux extra packges
 | [qemu-kvm](https://www.qemu.org/download/) | 2.12.0 | el7 | QEMU-KVM |
 | [qemu-guest-agent](https://wiki.qemu.org/Features/GuestAgent) | 2.12.1 | el6/el7 | QGA |
 | [python-pycurl](https://github.com/pycurl/pycurl)| 7.43.0.5 | el7 | PycURL for Python2 |
+| [forcedeth](https://www.kernel.org)| 0.64 | el7 | kmod-forcedeth |
 
 
 ## License
