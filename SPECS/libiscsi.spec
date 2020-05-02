@@ -1,7 +1,7 @@
 Name: libiscsi
 Summary: iSCSI client library
 Version: 1.19.0
-Release: 2%{?dist}
+Release: 3%{?dist}
 License: LGPLv2+
 Group: System Environment/Libraries
 URL: https://github.com/sahlberg/libiscsi
@@ -65,6 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc COPYING LICENCE-LGPL-2.1.txt README TODO
 %{_libdir}/iscsi/libiscsi.so.*
+%{_sysconfdir}/ld.so.conf.d/libiscsi.conf
 
 %package utils
 Summary: iSCSI Client Utilities
@@ -102,7 +103,6 @@ The libiscsi-devel package includes the header files for libiscsi.
 %{_includedir}/iscsi/scsi-lowlevel.h
 %{_libdir}/iscsi/libiscsi.so
 %{_libdir}/pkgconfig/libiscsi.pc
-%{_sysconfdir}/ld.so.conf.d/libiscsi.conf
 
 #%package testsuite
 #Summary: iSCSI test suite
