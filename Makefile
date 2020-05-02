@@ -22,6 +22,7 @@ help:
 	# make libvirt             Libvirt
 	# make libvirt-python      Libvirt API for Python2
 	# make forcedeth           Forcedeth kernel module
+	# make libiscsi            iSCSI client library
 	# make all                 Compile all rpm packages
 	# make clean               Clean cache files
 
