@@ -63,6 +63,10 @@ ALL += forcedeth-kmod
 forcedeth-kmod:
 	$(call RpmBuild,forcedeth-kmod)
 
+ALL += libiscsi
+libiscsi:
+	$(call RpmBuild,libiscsi)
+
 .PHONY: all
 all: $(ALL)
 
