@@ -36,7 +36,7 @@ ExcludeArch: %{ix86}
 Summary: The libvirt virtualization API python2 binding
 Name: libvirt-python
 Version: 5.10.0
-Release: 3%{?dist}%{?extra_release}
+Release: 4%{?dist}%{?extra_release}
 Source0: http://libvirt.org/sources/python/%{name}-%{version}.tar.gz
 Url: http://libvirt.org
 License: LGPLv2+

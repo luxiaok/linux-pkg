@@ -84,7 +84,7 @@
 %endif
 
 # We need a recent enough libiscsi (>= 1.18.0)
-%if 0%{?fedora} || 0%{?rhel} >= 7
+%if 0%{?fedora} || 0%{?rhel} > 7
     %define with_storage_iscsi_direct 0%{!?_without_storage_iscsi_direct:1}
 %else
     %define with_storage_iscsi_direct 0
@@ -228,7 +228,7 @@
 Summary: Library providing a simple virtualization API
 Name: libvirt
 Version: 5.10.0
-Release: 3%{?dist}
+Release: 4%{?dist}
 License: LGPLv2+
 URL: https://libvirt.org/
 Vendor: KK-Studio
@@ -1985,7 +1985,7 @@ exit 0
 
 %changelog
 * Sat May 2 2020 Xiaok <luxiaok2008@gmail.com> - 5.10.0-3
-- add --with-storage-iscsi-direct (libiscsi>=1.18) support for rhel7
+- add --with-storage-iscsi-direct (libiscsi>=1.18) support for rhel7 (Revert)
 * Thu Apr 30 2020 Xiaok <luxiaok2008@gmail.com> - 5.10.0-2
 - add --with-firewalld-zone support for rhel7
 * Wed Apr 29 2020 Xiaok <luxiaok2008@gmail.com> - 5.10.0-1
