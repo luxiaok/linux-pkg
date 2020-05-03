@@ -1,8 +1,4 @@
-SOURCES/*.patch
-SOURCES/*.tar.gz
-SOURCES/*.tar.xz
-SOURCES/*.tgz
-SOURCES/*.txz
+SOURCES
 BUILD
 RPMS
 SRPMS/*.src.rpm
