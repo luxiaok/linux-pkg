@@ -113,7 +113,7 @@ Obsoletes: %1%{rhev_provide_suffix} < %{epoch}:%{version}-%{release}   \
 Summary: QEMU is a machine emulator and virtualizer
 Name: %{pkgname}%{?pkgsuffix}
 Version: 2.12.0
-Release: 44.3%{?dist}_8.1
+Release: 44.4%{?dist}_8.1
 # Epoch because we pushed a qemu-1.0 package. AIUI this can't ever be dropped
 Epoch: 10
 License: GPLv2 and GPLv2+ and CC-BY
