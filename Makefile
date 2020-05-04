@@ -23,7 +23,7 @@ help:
 	# make libvirt-python      Libvirt API for Python2
 	# make forcedeth           Forcedeth kernel module
 	# make libiscsi            iSCSI client library
-	# make ksmtuned            Kernel Samepage Merging
+	# make ksmtuned            Kernel Samepage Merging (KSM) Tuning Daemo
 	# make all                 Compile all rpm packages
 	# make clean               Clean cache files
 
