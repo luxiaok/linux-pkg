@@ -1,4 +1,4 @@
-Name:     ksm
+Name:     ksmtuned
 Version:  1.0.0
 Release:  1%{?dist}
 Summary:  Kernel Samepage Merging
