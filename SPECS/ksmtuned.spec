@@ -10,7 +10,7 @@ URL:      https://github.com/luxiaok
 Source0:  %{name}-%{version}.tar.gz
 
 %description
-Kernel Samepage Merging for QEMU-KVM
+Kernel Samepage Merging (KSM) Tuning Daemo
 
 %prep
 %setup -q
