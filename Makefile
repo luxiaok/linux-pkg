@@ -23,7 +23,7 @@ help:
 	# make libvirt-python      Libvirt API for Python2
 	# make forcedeth           Forcedeth kernel module
 	# make libiscsi            iSCSI client library
-	# make ksm                 Kernel Samepage Merging
+	# make ksmtuned            Kernel Samepage Merging
 	# make all                 Compile all rpm packages
 	# make clean               Clean cache files
 
@@ -69,9 +69,9 @@ ALL += libiscsi
 libiscsi:
 	$(call RpmBuild,libiscsi)
 
-ALL += ksm
-ksm:
-	$(call RpmBuild,ksm)
+ALL += ksmtuned
+ksmtuned:
+	$(call RpmBuild,ksmtuned)
 
 .PHONY: all
 all: $(ALL)
