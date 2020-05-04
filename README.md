@@ -15,7 +15,7 @@ Linux extra packges
 | [python-pycurl](https://github.com/pycurl/pycurl)| 7.43.0.5 | el7 | PycURL for Python2 |
 | [forcedeth](https://www.kernel.org) | 0.64 | el7 | kmod-forcedeth |
 | [libiscsi](https://github.com/sahlberg/libiscsi) | 1.19.0 | el7 | iSCSI client library |
-| [ksm](SPECS/ksm.spec) | 1.0.0 | el7 | Kernel Samepage Merging (For QEMU-KVM) |
+| [ksmtuned](SPECS/ksmtuned.spec) | 1.0.0 | el7 | Kernel Samepage Merging (For QEMU-KVM) |
 
 
 ## License
