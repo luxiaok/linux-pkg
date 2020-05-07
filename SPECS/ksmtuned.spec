@@ -1,16 +1,23 @@
 Name:     ksmtuned
 Version:  1.0.0
-Release:  1%{?dist}
-Summary:  Kernel Samepage Merging
+Release:  2%{?dist}
+Summary:  Kernel Samepage Merging services
 Group:    Development/Tools
 Packager: Xiaok <luxiaok2008@gmail.com>
 Vendor:   KK-Studio
-License:  GPLv2
-URL:      https://github.com/luxiaok
+License:  GPLv2+
+URL:      https://github.com/ksmtuned/ksmtuned
 Source0:  %{name}-%{version}.tar.gz
 
+BuildRequires: gcc
+BuildRequires: systemd
+
 %description
-Kernel Samepage Merging (KSM) Tuning Daemo
+Kernel Samepage Merging (KSM) is a memory-saving de-duplication feature,
+that merges anonymous (private) pages (not pagecache ones).
+
+This package provides service files for disabling (ksm) and tuning (ksmtuned)
+
 
 %prep
 %setup -q
@@ -48,3 +55,4 @@ install -D -p -m 0644 ksmtuned.conf $RPM_BUILD_ROOT%{_sysconfdir}/ksmtuned.conf
 %{_sbindir}/ksmtuned
 
 %changelog
+
