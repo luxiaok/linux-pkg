@@ -16,7 +16,7 @@ BuildRequires: systemd
 Kernel Samepage Merging (KSM) is a memory-saving de-duplication feature,
 that merges anonymous (private) pages (not pagecache ones).
 
-This package provides service files for disabling (ksm) and tuning (ksmtuned)
+This package provides service files for disabling (ksm) and tuning (ksmtuned).
 
 
 %prep
