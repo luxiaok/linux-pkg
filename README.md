@@ -17,7 +17,7 @@ Linux extra packges
 | [forcedeth](https://www.kernel.org) | 0.64 | el7 | kmod-forcedeth |
 | [libiscsi](https://github.com/sahlberg/libiscsi) | 1.19.0 | el7 | iSCSI client library |
 | [ksmtuned](SPECS/ksmtuned.spec) | 1.0.0 | el7 | Kernel Samepage Merging (KSM) Tuning Daemo |
-| [libzip](SPECS/libzip.spec) | 1.6.1 | el6/el7 | libzip |
+| [libzip](SPECS/libzip.spec) | 1.6.1 | el6/el7 | C library for zip |
 
 
 ## License
