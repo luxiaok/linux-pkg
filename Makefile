@@ -25,6 +25,7 @@ help:
 	# make libiscsi            iSCSI client library
 	# make ksmtuned            Kernel Samepage Merging (KSM) Tuning Daemo
 	# make libzip              C library for zip
+	# make autoconf            A GNU tool for automatically configuring source code
 	# make all                 Compile all rpm packages
 	# make clean               Clean cache files
 
@@ -77,6 +78,10 @@ ksmtuned:
 ALL += libzip
 libzip:
 	$(call RpmBuild,libzip)
+
+ALL += autoconf
+autoconf:
+	$(call RpmBuild,autoconf)
 
 .PHONY: all
 all: $(ALL)
