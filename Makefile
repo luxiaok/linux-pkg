@@ -24,7 +24,7 @@ help:
 	# make forcedeth           Forcedeth kernel module
 	# make libiscsi            iSCSI client library
 	# make ksmtuned            Kernel Samepage Merging (KSM) Tuning Daemo
-	# make libzip              libzip
+	# make libzip              C library for zip
 	# make all                 Compile all rpm packages
 	# make clean               Clean cache files
 
