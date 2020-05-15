@@ -24,6 +24,7 @@ help:
 	# make forcedeth           Forcedeth kernel module
 	# make libiscsi            iSCSI client library
 	# make ksmtuned            Kernel Samepage Merging (KSM) Tuning Daemo
+	# make libzip              libzip
 	# make all                 Compile all rpm packages
 	# make clean               Clean cache files
 
@@ -72,6 +73,10 @@ libiscsi:
 ALL += ksmtuned
 ksmtuned:
 	$(call RpmBuild,ksmtuned)
+
+ALL += libzip
+libzip:
+	$(call RpmBuild,libzip)
 
 .PHONY: all
 all: $(ALL)
