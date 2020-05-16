@@ -26,6 +26,7 @@ help:
 	# make ksmtuned            Kernel Samepage Merging (KSM) Tuning Daemo
 	# make libzip              C library for zip
 	# make autoconf            A GNU tool for automatically configuring source code
+	# make hiredis             Minimalistic C client library for Redis
 	# make all                 Compile all rpm packages
 	# make clean               Clean cache files
 
@@ -82,6 +83,10 @@ libzip:
 ALL += autoconf
 autoconf:
 	$(call RpmBuild,autoconf)
+
+ALL += hiredis
+hiredis:
+	$(call RpmBuild,hiredis)
 
 .PHONY: all
 all: $(ALL)
