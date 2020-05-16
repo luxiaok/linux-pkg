@@ -18,7 +18,7 @@ Linux extra packges
 | [libiscsi](https://github.com/sahlberg/libiscsi) | 1.19.0 | el7 | iSCSI client library |
 | [ksmtuned](SPECS/ksmtuned.spec) | 1.0.0 | el7 | Kernel Samepage Merging (KSM) Tuning Daemo |
 | [libzip](https://github.com/nih-at/libzip) | 1.6.1 | el6/el7 | C library for zip |
-| [autoconf](SPECS/autoconf.spec) | 2.69 | el6/el7 | A GNU tool for automatically configuring source code |
+| [autoconf](https://ftp.gnu.org/gnu/autoconf) | 2.69 | el6/el7 | A GNU tool for automatically configuring source code |
 | [hiredis](SPECS/hiredis.spec) | 0.14.1 | el6/el7 | Minimalistic C client library for Redis |
 
 
