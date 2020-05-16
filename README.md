@@ -19,6 +19,7 @@ Linux extra packges
 | [ksmtuned](SPECS/ksmtuned.spec) | 1.0.0 | el7 | Kernel Samepage Merging (KSM) Tuning Daemo |
 | [libzip](SPECS/libzip.spec) | 1.6.1 | el6/el7 | C library for zip |
 | [autoconf](SPECS/autoconf.spec) | 2.69 | el6/el7 | A GNU tool for automatically configuring source code |
+| [hiredis](SPECS/hiredis.spec) | 0.14.1 | el6/el7 | Minimalistic C client library for Redis |
 
 
 ## License
