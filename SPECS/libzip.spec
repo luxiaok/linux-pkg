@@ -1,13 +1,13 @@
-Name: libzip
-Summary: C library for reading, creating, and modifying zip archives
-Version: 1.6.1
-Release: 1%{?dist}
-License: BSD
-Group: System Environment/Libraries
-URL: https://github.com/nih-at/libzip
-Vendor: GitHub
-Packager: Xiaok <luxiaok2008@gmail.com>
-Source: libzip-%{version}.tar.xz
+Name:          libzip
+Summary:       C library for reading, creating, and modifying zip archives
+Version:       1.6.1
+Release:       1%{?dist}
+License:       BSD
+Group:         System Environment/Libraries
+URL:           https://github.com/nih-at/libzip
+Vendor:        GitHub
+Packager:      Xiaok <luxiaok2008@gmail.com>
+Source:        libzip-%{version}.tar.xz
 BuildRequires: cmake3
 
 %description
@@ -54,6 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3
 
 %changelog
-* Sat May 2 2020 Xiaok <luxiaok2008@gmail.com> - 1.6.1-1
+* Fri May 15 2020 Xiaok <luxiaok2008@gmail.com> - 1.6.1-1
 - Build rpm package for v1.6.1-1
-
