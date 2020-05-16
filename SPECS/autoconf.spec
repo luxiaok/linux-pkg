@@ -1,13 +1,13 @@
-Name: autoconf
-Summary: A GNU tool for automatically configuring source code
-Version: 2.69
-Release: 1%{?dist}
-License: GPLv3+ and GFDL
-Group: Development/Tools
-URL: https://ftp.gnu.org/gnu/autoconf
-Vendor: KK-Studio
-Packager: Xiaok <luxiaok2008@gmail.com>
-Source: %{name}-%{version}.tar.xz
+Name:       autoconf
+Summary:    A GNU tool for automatically configuring source code
+Version:    2.69
+Release:    1%{?dist}
+License:    GPLv3+ and GFDL
+Group:      Development/Tools
+URL:        https://ftp.gnu.org/gnu/autoconf
+Vendor:     KK-Studio
+Packager:   Xiaok <luxiaok2008@gmail.com>
+Source:     %{name}-%{version}.tar.xz
 
 %description
 GNU Autoconf is a tool for configuring source code and Makefiles.
