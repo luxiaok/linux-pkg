@@ -29,6 +29,7 @@ help:
 	# make hiredis             Minimalistic C client library for Redis
 	# make yum                 Create YUM repodata
 	# make all                 Compile all rpm packages
+	# make update              Update for git repo
 	# make clean               Clean cache files
 
 # ALL += test
@@ -93,6 +94,10 @@ hiredis:
 yum:
 	$(RM) -r RPMS/x86_64/repodata
 	@createrepo RPMS/x86_64
+
+.PHONY: update
+update:
+	git pull origin master
 
 .PHONY: all
 all: $(ALL)
