@@ -27,6 +27,7 @@ help:
 	# make libzip              C library for zip
 	# make autoconf            A GNU tool for automatically configuring source code
 	# make hiredis             Minimalistic C client library for Redis
+	# make yum                 Create YUM repodata
 	# make all                 Compile all rpm packages
 	# make clean               Clean cache files
 
@@ -87,6 +88,11 @@ autoconf:
 ALL += hiredis
 hiredis:
 	$(call RpmBuild,hiredis)
+
+.PHONY: yum
+yum:
+	$(RM) -r RPMS/x86_64/repodata
+	@createrepo RPMS/x86_64
 
 .PHONY: all
 all: $(ALL)
