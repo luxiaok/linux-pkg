@@ -8,7 +8,6 @@ Group: Development/Tools
 License: GPLv2
 URL: https://github.com/luxiaok
 Source0: %{name}-%{version}.tar.gz
-Requires: bash, glib2, glibc
 
 
 %description
