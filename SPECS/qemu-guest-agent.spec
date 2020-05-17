@@ -1,7 +1,6 @@
 Name: qemu-guest-agent
 Version: 2.12.1
 Release: 1%{?dist}
-Epoch: 2
 Summary: QEMU Guest Agent (QGA)
 Packager: Xiaok <luxiaok2008@gmail.com>
 Vendor: KK-Studio
@@ -10,6 +9,9 @@ License: GPLv2
 URL: https://github.com/luxiaok
 Source0: %{name}-%{version}.tar.gz
 
+%if 0%{?rhel} == 6
+Epoch: 2
+%endif
 
 %description
 This package provides a qemu guest agent daemon to be running inside of
