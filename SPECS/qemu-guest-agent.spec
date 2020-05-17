@@ -1,6 +1,7 @@
 Name: qemu-guest-agent
 Version: 2.12.1
 Release: 1%{?dist}
+Epoch: 2
 Summary: QEMU Guest Agent (QGA)
 Packager: Xiaok <luxiaok2008@gmail.com>
 Vendor: KK-Studio
