@@ -7,7 +7,7 @@ Group:      Development/Tools
 URL:        https://ftp.gnu.org/gnu/autoconf
 Vendor:     KK-Studio
 Packager:   Xiaok <luxiaok2008@gmail.com>
-Source:     %{name}-%{version}.tar.xz
+Source:     https://ftp.gnu.org/gnu/autoconf/%{name}-%{version}.tar.xz
 
 %description
 GNU Autoconf is a tool for configuring source code and Makefiles.
