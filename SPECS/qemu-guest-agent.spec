@@ -9,6 +9,7 @@ License: GPLv2
 URL: https://github.com/luxiaok
 Source0: %{name}-%{version}.tar.gz
 
+# For RHEL 6
 %if 0%{?rhel} == 6
 Epoch: 2
 %endif
