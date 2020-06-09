@@ -55,4 +55,6 @@ install -D -p -m 0644 ksmtuned.conf $RPM_BUILD_ROOT%{_sysconfdir}/ksmtuned.conf
 %{_sbindir}/ksmtuned
 
 %changelog
+* Fri May 15 2020 Xiaok <luxiaok2008@gmail.com> - 1.0.0-1
+- Build rpm package for v1.0.0-1
 
